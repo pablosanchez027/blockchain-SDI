@@ -1,16 +1,12 @@
 {
-    "extends": ["airbnb-base"],
-    "env": {
-        "jest":true,
-        "node":true
+    "extends": "airbnb-base",
+    "env": 
+    {
+        "jest": true,
+        "node": true
     },
-    "rule": {
-        "max-len": [
-            1, 
-            120, {
-                "tabWidth": 2, 
-                "ignoreComments": true
-            }
-        ]
+    "rule":
+    {
+        "max-len": [1,120, {"tabWidth":2, "ignoreComments":true}]
     }
 }

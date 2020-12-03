@@ -38,9 +38,9 @@ class Block
         return new this(timestamp,previousHash,hash,data,nonce);
     }
 
-    static hash(timestamp,previousHash,data)
+    static hash(timestamp,previousHash,data,nonce)
     {
-        return SHA256(`${timestamp}${previousHash},${data}`).toString();
+        return SHA256(`${timestamp}${previousHash}${data}${nonce}`).toString();
     }
 
 
